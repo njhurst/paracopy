@@ -1,3 +1,5 @@
+# Paracopy
+
 This script is used to copy files from a source directory to a destination directory using multiple worker threads.
 It provides options for verbose output, dry run (no actual file copying), and deleting source files after copying.
 The progress of the file copying process is displayed, including the number of files copied, skipped, and the total bytes copied.
@@ -27,6 +29,7 @@ files in 2MB chunks.  This allows the script to copy files in parallel and avoid
 resume copying if the script is interrupted.  The script also uses the file size and modification time to determine 
 if a file needs to be copied.
 
+```
 Usage:
 python paracopy.py source_directory destination_directory [--max_workers MAX_WORKERS] [--verbose] [--dry_run] [--delete_source]
 
@@ -39,3 +42,4 @@ Options:
 --verbose                    Print verbose output
 --dry_run                    Dry run (do not copy files)
 --delete_source              Delete source files after copying
+```
